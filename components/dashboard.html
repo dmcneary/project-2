@@ -29,7 +29,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <!-- Brand -->
-      <a class="navbar-brand pt-0" href="./login.html">
+      <a class="navbar-brand pt-0" href="../components/login.html">
         <img src="../assets/img/brand/cloud.png" class="navbar-brand-img" alt="..."> UpCloud
       </a>
       <!-- User -->
@@ -144,7 +144,6 @@
               <i class="fas fa-envelope"></i> Contact Us
             </a>
           </li>
-        </ul>
       </div>
     </div>
   </nav>
@@ -154,7 +153,7 @@
     <nav class="navbar navbar-top navbar-expand-md navbar-dark" id="navbar-main">
       <div class="container-fluid">
         <!-- Brand -->
-        <a class="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block" href="../index.html">  </a>
+        <a class="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block" href="../components/dashboard.html">Dashboard</a>
         <!-- User -->
         <ul class="navbar-nav align-items-center d-none d-md-flex">
           <li class="nav-item dropdown">
@@ -198,85 +197,206 @@
         </ul>
       </div>
     </nav>
-    <br>
-    <br>
-    <!-- Contact Form-->
-    <div id="contact" class="contact-section">
-      <div class="container">
-          <h2 class="section-title">Contact Us</h2>
-          <div class="content">
-              <form id="contact-form" method="POST" data-netlify="true">
-                <br>
-                  <div class="form-row">
-                          <div class="form-group col-md-6">
-                              <label for="name">Name</label>
-                              <input type="text" class="form-control"
-                              id="name" name="name" placeholder="Your Name" required="required">
-                          </div>
-                  </div>
-
-                  <div class="form-row">
-                      <div class="form-group col-md-6">
-                          <label for="email" class="animated pulse">Email</label>
-                          <input type="email" class="form-control" 
-                          id="email" name="email" placeholder="sample@mail.com" required="required">
-                      <div>
-                  </div>
-                  <br>
-                  <div class="form-row">
-                      <div class="form-group col-md-6">
-                          <label for="phone" class="animated pulse">Phone</label>
-                          <input type="phone" class="form-control" 
-                          id="phone" name="phone" required="required">
+    <!-- Header -->
+    <div class="header bg-gradient-primary pb-8 pt-5 pt-md-8">
+      <div class="container-fluid">
+        <div class="header-body">
+          <!-- Card stats -->
+          <div class="row">
+            <div class="col-xl-3 col-lg-6">
+              <div class="card card-stats mb-4 mb-xl-0">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col">
+                      <h5 class="card-title text-uppercase text-muted mb-0">SOME DATA</h5>
+                      <span class="h2 font-weight-bold mb-0">123</span>
+                    </div>
+                    <div class="col-auto">
+                      <div class="icon icon-shape bg-danger text-white rounded-circle shadow">
+                        <i class="fas fa-chart-bar"></i>
                       </div>
+                    </div>
                   </div>
-                  <div class="form-row">
-                      <div class="form-group col-md-6"
-                          label for="message">Message</label>
-                          <textarea id="message" class="form-control"
-                          name="message" required="required"></textarea>
-                      </div>
-                  </div>
-                  <br>
-                  <div class="field"></div>
-                  <div data-netlify-recaptcha="true"></div>
-                  <br>
-                  <button type="submit" class="btn btn-primary">SUBMIT</button>
-              </form>
-          </div><!--//content-->
-          
-      </div><!--//container-->
-      <!-- Footer -->
-      <footer class="py-5">
-          <div class="container">
-            <div class="row align-items-center justify-content-xl-between">
-              <div class="col-xl-6">
-                <div class="copyright text-center text-xl-left text-muted">
-                  &copy; 2019 <a href="https://github.com/dmcneary/project-2" class="font-weight-bold ml-1" target="_blank">UpCloud</a>
+                  <p class="mt-3 mb-0 text-muted text-sm">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                  </p>
                 </div>
               </div>
-              <div class="col-xl-6">
-                <ul class="nav nav-footer justify-content-center justify-content-xl-end">
-                  <li class="nav-item">
-                    <a href="https://github.com/dmcneary/project-2" class="nav-link" target="_blank">|About Us|</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="https://github.com/dmcneary/project-2" class="nav-link" target="_blank">|GitHub|</a>
-                  </li>
-                </ul>
+            </div>
+            <div class="col-xl-3 col-lg-6">
+              <div class="card card-stats mb-4 mb-xl-0">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col">
+                      <h5 class="card-title text-uppercase text-muted mb-0">SOME DATA</h5>
+                      <span class="h2 font-weight-bold mb-0">123</span>
+                    </div>
+                    <div class="col-auto">
+                      <div class="icon icon-shape bg-warning text-white rounded-circle shadow">
+                        <i class="fas fa-chart-pie"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="mt-3 mb-0 text-muted text-sm">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-6">
+              <div class="card card-stats mb-4 mb-xl-0">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col">
+                      <h5 class="card-title text-uppercase text-muted mb-0">SOME DATA</h5>
+                      <span class="h2 font-weight-bold mb-0">123</span>
+                    </div>
+                    <div class="col-auto">
+                      <div class="icon icon-shape bg-yellow text-white rounded-circle shadow">
+                        <i class="fas fa-users"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="mt-3 mb-0 text-muted text-sm">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-6">
+              <div class="card card-stats mb-4 mb-xl-0">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col">
+                      <h5 class="card-title text-uppercase text-muted mb-0">SOME DATA</h5>
+                      <span class="h2 font-weight-bold mb-0">123</span>
+                    </div>
+                    <div class="col-auto">
+                      <div class="icon icon-shape bg-info text-white rounded-circle shadow">
+                        <i class="fas fa-percent"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="mt-3 mb-0 text-muted text-sm">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-        </footer>
+        </div>
+      </div>
     </div>
-  </div>
-  <!--SHARE THIS-->
-  <div class="sharethis-inline-share-buttons"></div> 
-  <!--  Scripts -->
+    <!-- Page content -->
+      <div class="row mt-5">
+        <div class="col-xl-8 mb-5 mb-xl-0">
+          <div class="card shadow">
+            <div class="card-header border-0">
+              <div class="row align-items-center">
+                <div class="col">
+                  <h3 class="mb-0">SOME DATA</h3>
+                </div>
+                <div class="col text-right">
+                  <a href="#!" class="btn btn-sm btn-primary">See all</a>
+                </div>
+              </div>
+            </div>
+            <div class="table-responsive">
+              <!-- Projects table -->
+              <table class="table align-items-center table-flush">
+                <thead class="thead-light">
+                  <tr>
+                    <th scope="col">DATA</th>
+                    <th scope="col">DATA</th>
+                    <th scope="col">DATA</th>
+                    <th scope="col">DATA</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">
+                      Files
+                    </th>
+                    <td>
+                      123
+                    </td>
+                    <td>
+                      123
+                    </td>
+                    <td>
+                      123
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      Files
+                    </th>
+                    <td>
+                      123
+                    </td>
+                    <td>
+                      123
+                    </td>
+                    <td>
+                      123
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      Files
+                    </th>
+                    <td>
+                      123
+                    </td>
+                    <td>
+                      123
+                    </td>
+                    <td>
+                      123
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      Files
+                    </th>
+                    <td>
+                      123
+                    </td>
+                    <td>
+                      123
+                    </td>
+                    <td>
+                      123
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      Files
+                    </th>
+                    <td>
+                      123
+                    </td>
+                    <td>
+                      123
+                    </td>
+                    <td>
+                      123
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!--SHARE THIS-->
+    <div class="sharethis-inline-share-buttons"></div>
+  <!-- Scripts -->
   <!-- Core -->
   <script src="../assets/vendor/jquery/dist/jquery.min.js"></script>
   <script src="../assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  <!--  JS -->
+  <!-- JS -->
   <script src="../assets/js/main.js?v=1.0.0"></script>
 </body>
 
