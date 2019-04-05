@@ -1,29 +1,26 @@
 {
-  "name": "node-handlebars-boilerplate",
+  "name": "project2-test",
   "version": "1.0.0",
-  "description": "Project 2 Starter",
-  "main": "server.js",
-  "scripts": {
-    "start": "node server.js",
-    "lint": "eslint **/*.js --quiet",
-    "fix": "eslint --fix .",
-    "test": "npm run lint && NODE_ENV=test mocha -u tdd --reporter spec --exit"
-  },
-  "license": "ISC",
+  "description": "",
+  "main": "index.js",
   "dependencies": {
-    "dotenv": "^6.0.0",
-    "express": "^4.16.4",
-    "express-handlebars": "^3.0.2",
-    "mysql2": "^1.6.5",
-    "sequelize": "^4.43.1"
+    "blueimp-file-upload": "^9.28.0",
+    "cloudinary-jquery-file-upload": "^2.6.3",
+    "jquery": "^3.3.1",
+    "uploadcare-widget": "^3.7.0"
   },
-  "devDependencies": {
-    "chai": "^4.1.2",
-    "chai-http": "^4.0.0",
-    "eslint": "^4.19.1",
-    "eslint-config-prettier": "^2.9.0",
-    "eslint-plugin-prettier": "^2.6.2",
-    "mocha": "^5.2.0",
-    "prettier": "^1.13.7"
-  }
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lerodcalanoc/project2-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lerodcalanoc/project2-test/issues"
+  },
+  "homepage": "https://github.com/lerodcalanoc/project2-test#readme"
 }
