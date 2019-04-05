@@ -18,5 +18,12 @@ module.exports = function(sequelize, DataTypes) {
       /*add UUID object if necessary??? */
     }
   });
-  return Example;
+
+  User.associate = function(models) { 
+    User.hasMany(models.Favorite, {
+      onDelete: "cascade"
+    });
+  }
+  return User;
+  // return Example;
 };
