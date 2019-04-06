@@ -13,12 +13,19 @@ module.exports = function(sequelize, DataTypes) {
       isEmail: true,
         notNull: true,
         notEmpty: true
-    },
-    id: {
-      /*add UUID object if necessary??? */
     }
+    // if we want a whole user profile 
+    // firstName: DataTypes.STRING, 
+    // lastName: DataTypes.STRING,
+    // address: {
+    //   street: DataTypes.TEXT,
+    //   city: DataTypes.TEXT
+    // },
+    // aboutMe: {
+    //   type: DataTypes.TEXT,
+    //   allowNull: true}
   });
-
+// if we want to use 
   User.associate = function(models) { 
     User.hasMany(models.Favorite, {
       onDelete: "cascade"
