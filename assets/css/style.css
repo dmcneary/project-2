@@ -8034,7 +8034,7 @@ button.bg-dark:focus
 
 .bg-default
 {
-    background-color: #172b4d !important;
+    background-color: #282c33 !important;
 }
 
 a.bg-default:hover,
@@ -8460,6 +8460,9 @@ button.bg-darker:focus
         display: inline-flex !important;
     }
 }
+
+
+
 
 @media print
 {
@@ -14472,6 +14475,14 @@ button.bg-darker:focus
     {
         text-align: center !important;
     }
+}
+
+.text-descriptive{
+    color: #282c33;
+}
+
+.biggergoogle{
+    size: 50px;
 }
 
 @media (min-width: 768px)
