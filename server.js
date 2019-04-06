@@ -11,15 +11,8 @@ var PORT = process.env.PORT || 3000;
 // Middleware
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }));
-
 // parse application/json
 app.use(bodyParser.json());
-
-app.use(function (req, res) {
-  res.setHeader('Content-Type', 'text/plain')
-  res.write('you posted:\n')
-  res.end(JSON.stringify(req.body, null, 2))
-});
 app.use(express.static("public"));
 app.use(session({ secret: "web dev is hard", resave: true, saveUninitialized: true }));
 app.use(passport.initialize());
