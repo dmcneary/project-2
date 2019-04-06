@@ -21,7 +21,7 @@
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous">
     <!--  CSS -->
-    <link type="text/css" href="./assets/css/style.css?v=1.0.0"
+    <link type="text/css" href="./assets/css/style.css"
       rel="stylesheet">
     <!--SHARE THIS-->
     <script type='text/javascript'
@@ -41,7 +41,7 @@
       <nav class="navbar navbar-top navbar-horizontal navbar-expand-md
         navbar-dark">
         <div class="container px-4">
-          <a class="navbar-brand" href="./index.html">
+          <a class="navbar-brand" href="/">
             <img src="./assets/img/brand/cloud.png" />
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -55,7 +55,7 @@
             <div class="navbar-collapse-header d-md-none">
               <div class="row">
                 <div class="col-6 collapse-brand">
-                  <a href="./index.html">
+                  <a href="/">
                     <img src="./assets/img/brand/cloud.png"> UpCloud
                   </a>
                 </div>
@@ -73,7 +73,7 @@
             <!-- Navbar items -->
             <ul class="navbar-nav ml-auto">
               <!-- <li class="nav-item">
-                <a class="nav-link nav-link-icon" href="./index.html">
+                <a class="nav-link nav-link-icon" href="/">
                   <i class="ni ni-circle-08 text-primary"></i>
                   <span class="nav-link-inner--text text-primary">Register</span>
                 </a>
@@ -139,7 +139,7 @@
               <div class="text-center text-muted mb-4">
                 <small>Or sign up with credentials</small>
               </div>
-              <form role="form">
+              <form role="form" id="signup">
                 <div class="form-group">
                   <div class="input-group input-group-alternative mb-3">
                     <div class="input-group-prepend">
@@ -171,6 +171,7 @@
 
                   </div>
                 </div>
+                <div><span class="text-warning font-weight-700" id="error-msg"></span></div>
                 <div class="text-muted font-italic"><small>password strength:
                     <span class="text-success font-weight-700">strong</span></small></div>
                 <div class="row my-4">
@@ -234,6 +235,7 @@
     <script src="./assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <!--  JS -->
     <script src="./assets/js/main.js?v=1.0.0"></script>
+    <script src="./assets/js/users.js"></script>
   </body>
 
 </html>
