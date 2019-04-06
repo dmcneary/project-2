@@ -2,14 +2,24 @@ var express = require("express");
 var session = require("express-session");
 var exphbs = require("express-handlebars");
 var passport = require("./config/passport");
+var bodyParser = require('body-parser');
 var db = require("./models");
 
 var app = express();
 var PORT = process.env.PORT || 3000;
 
 // Middleware
-app.use(express.urlencoded({ extended: false }));
-app.use(express.json());
+// parse application/x-www-form-urlencoded
+app.use(bodyParser.urlencoded({ extended: false }));
+
+// parse application/json
+app.use(bodyParser.json());
+
+app.use(function (req, res) {
+  res.setHeader('Content-Type', 'text/plain')
+  res.write('you posted:\n')
+  res.end(JSON.stringify(req.body, null, 2))
+});
 app.use(express.static("public"));
 app.use(session({ secret: "web dev is hard", resave: true, saveUninitialized: true }));
 app.use(passport.initialize());
