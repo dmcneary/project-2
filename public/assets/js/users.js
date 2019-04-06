@@ -13,7 +13,7 @@ $(document).ready(function () {
         
         if (!newUser.username || !newUser.email || !newUser.password) {
             $("#error-msg").text("Please make sure to fill all above fields!");
-            //return;
+            return;
         };
 
         
