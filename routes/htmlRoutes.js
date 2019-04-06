@@ -8,9 +8,9 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, "../index.html"))
   });
   //login page
-  app.get("/login", function(req, res) {
-    res.sendFile(path.join(__dirname, "../components/login.html"));
-  });
+  // app.get("/login", function(req, res) {
+  //   res.sendFile(path.join(__dirname, "../components/login.html"));
+  // });
   /* register (not used, sign up from index page)
   app.get("/register", function(req, res) {
     res.sendFile(path.join(__dirname, "../components/register.html"));
@@ -25,9 +25,9 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, "../components/file-manager.html"));
   });*/
 
-  app.get("/profile", function(req, res) {
-    res.sendFile(path.join(__dirname, "../components/profile.html"));
-  });
+  // app.get("/profile", function(req, res) {
+  //   res.sendFile(path.join(__dirname, "../components/profile.html"));
+  // });
 
   app.get("/contact", function(req, res) {
     res.sendFile(path.join(__dirname, "../components/contact.html"));
