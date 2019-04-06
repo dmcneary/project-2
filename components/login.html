@@ -114,7 +114,7 @@
           
             <div class="card-body px-lg-4 py-lg-3">
               <div class="text-center text-muted mb-4">
-                <small>Or sign up with credentials</small>
+                <small>Or sign in with credentials</small>
               </div>
               <form role="form">
                 <div class="form-group">
@@ -122,16 +122,7 @@
                     <div class="input-group-prepend">
                       <span class="input-group-text"><i class="ni ni-hat-3"></i></span>
                     </div>
-                    <input class="form-control" placeholder="Name" type="text" id="user-name">
-                  </div>
-                </div>
-                <div class="form-group">
-                  <div class="input-group input-group-alternative mb-3">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text"><i class="ni ni-email-83"></i></span>
-                    </div>
-                    <input class="form-control" placeholder="Email"
-                      type="email" id="user-email">
+                    <input class="form-control" placeholder="Name" type="text" id="username">
                   </div>
                 </div>
                 <div class="form-group">
@@ -141,23 +132,11 @@
                           ni-lock-circle-open"></i></span>
                     </div>
                     <input class="form-control" placeholder="Password"
-                      type="password" id="user-password">
+                      type="password" id="password">
                   </div>
                 </div>
-                <div class="text-muted font-italic"><small>password strength: <span class="text-success font-weight-700">strong</span></small></div>
-                <div class="row my-4">
-                  <div class="col-12">
-                    <div class="custom-control custom-control-alternative custom-checkbox">
-                      <input class="custom-control-input" id="customCheckRegister" type="checkbox">
-                      <label class="custom-control-label mb-3" for="customCheckRegister">
-                        <span class="text-muted">I agree with the <a href="#!">Privacy Policy</a></span>
-                      </label>
-
-                    </div>
-                  </div>
-              
                 <div class="text-center">
-                  <button type="button" class="btn btn-primary mt-1">Create account</button>
+                  <button type="button" class="btn btn-primary mt-1" id="login">Login</button>
                 </div>
               </form>
             </div>
@@ -196,6 +175,7 @@
   <script src="../assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <!--  JS -->
   <script src="../assets/js/main.js?v=1.0.0"></script>
+  <script src="../assets/js/login.js"></script>
 </body>
 
 </html>
