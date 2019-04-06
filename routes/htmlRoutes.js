@@ -7,7 +7,7 @@ module.exports = function(app) {
   app.get("/", function(req, res) {
     res.sendFile(path.join(__dirname, "../index.html"))
   });
-  //login page
+  // login page
   app.get("/login", function(req, res) {
     res.sendFile(path.join(__dirname, "../components/login.html"));
   });
@@ -25,16 +25,16 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, "../components/file-manager.html"));
   });*/
 
-  app.get("/profile", function(req, res) {
-    res.sendFile(path.join(__dirname, "../components/profile.html"));
-  });
+  // app.get("/profile", function(req, res) {
+  //   res.sendFile(path.join(__dirname, "../components/profile.html"));
+  // });
 
   app.get("/contact", function(req, res) {
     res.sendFile(path.join(__dirname, "../components/contact.html"));
   });
 
-  /* Render 404 page for any unmatched routes
+  // Render 404 page for any unmatched routes
   app.get("*", function(req, res) {
     res.render("404");
-  });*/
+  });
 };
