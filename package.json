@@ -8,7 +8,7 @@
     "blueimp-file-upload": "^9.28.0",
     "body-parser": "^1.18.3",
     "cloudinary-jquery-file-upload": "^2.6.3",
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "express-handlebars": "^3.0.2",
     "express-session": "^1.15.6",
     "jquery": "^3.5.0",
